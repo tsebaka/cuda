@@ -34,10 +34,8 @@ int main() {
     cudaFree(dev_b);
     cudaFree(dev_c);
 
-    for (int i = 0; i < N; ++i) {
+    for (int i = 0; i < N; ++i)
         std::cout << c[i] << " ";
-    }
-
 
     return 0;
 }
