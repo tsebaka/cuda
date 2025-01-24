@@ -63,7 +63,7 @@ int main() {
     for (int i = 0; i < blocksPerGrid; ++i)
         dot_product += partial_c[i];
 
-    std::cout << dot_product;
+    std::cout << dot_product << "\n";
         
     return 0;
 }
