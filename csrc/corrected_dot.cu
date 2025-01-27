@@ -7,6 +7,7 @@ const int N = 10;
 const int blocksPerGrid = 4;
 const int threadsPerBlock = 4;
 
+
 void fill(int* arr, int size) {
     for (int i = 0; i < size; ++i)
         *(arr + i) = i + 1;
