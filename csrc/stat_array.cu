@@ -16,7 +16,7 @@ __global__ void hist_kernel(int* input, int* hist, size_t n) {
     }
 
     __syncthreads();
-    atomicAdd(&(hist[threadIdx.x]), &(cache[threadIdx.x]));
+    atomicAdd(&(hist[threadIdx.x]), cache[threadIdx.x]);
 }
 
 int main() {
